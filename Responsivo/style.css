@@ -1,0 +1,92 @@
+body {
+   margin: 0 auto;
+   background-color: black;
+
+} 
+
+/*Formatar o cabeçalho*/
+
+.logo {
+    margin: 0 auto;
+    height: 70px;
+}
+
+
+header {
+    background-color:white;
+    padding: 10px;
+
+
+/*colocar objetos ao lado um do outro*/
+display: flex; 
+/*alinhamento vertical (centralizado) */
+align-items: center;
+/*objetos justificados (horizontal) com espaço entre eles*/
+justify-content: space-between;
+/*permite quebra de linha dos objetos ao chegar no limite*/
+flex-wrap: wrap;
+}
+
+  
+ nav ul {
+  display: flex;
+  list-style: none;
+
+}
+
+
+  nav ul li{
+    margin-left: 10px;
+
+}
+
+
+ nav ul li a{
+    display: block;
+    background-color: black;
+    padding: 5px 30px;
+    text-decoration: none;
+    color: white;
+    font-family: arial,verdana, Helvetica;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    background-color:cyan;
+    color:black;
+    border:white 1px solid; 
+    box-shadow: rgb(150,150,150) 3px 3px 3px 3px;
+}
+ 
+
+/* inicio do conteudo-imagens*/
+
+img {
+    max-width: 100%;
+    display: block;
+
+}
+
+.flex{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.flex > div {
+    flex: 1 1 280px;
+    margin: 10px;
+    border: white 1px solid;
+}
+
+p { 
+
+    font-family: Arial, verdana, Helvetica;
+    font-size: 16px;
+    color:white;
+    text-align: center;
+
+}
